@@ -2,6 +2,6 @@
   "db": {
     "name": "db",
     "connector": "memory",
-    "file": "./data/campus-maps-loopback.json"
+    "file": "./data/recycle-points-loopback.json"
   }
 }
