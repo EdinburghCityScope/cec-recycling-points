@@ -6,7 +6,8 @@ var getCkanApiResponseFields = edinburghcityscopeUtils.getCkanApiResponseFields;
 var convertCkanAPIResultsToCityScopeJson = edinburghcityscopeUtils.convertCkanAPIResultsToCityScopeJson;
 var parseCkanApiResponseFields = edinburghcityscopeUtils.parseCkanApiResponseFields;
 var parseCkanApiResult = edinburghcityscopeUtils.parseCkanApiResult;
-var convertCsvDataToJson = edinburghcityscopeUtils.convertCsvDataToJson;
+var convertCsvDataToGeoJson = edinburghcityscopeUtils.convertCsvDataToGeoJson;
+var csv2geojson = require('csv2geojson');
 
 var json2csv = require('json2csv');
 var csvtojson = require('csvtojson');
@@ -40,8 +41,7 @@ getDataFromURL(ckanApiUrl, function(callback){
       console.log('CSV file saved to '+outputCsvFile);
       console.log("Converting CSV to GeoJSON");
       var csvData = fs.readFileSync(outputCsvFile, 'utf8');
-      console.log(csvData);
-      convertCsvDataToJson(csvData,function(callback){
+      convertCsvDataToGeoJson(csvData,function(callback){
         fs.writeFile(outputGeoJsonFile,JSON.stringify(callback), function(err){
           if (err) throw err;
           console.log('GeoJSON file saved to '+outputGeoJsonFile);
