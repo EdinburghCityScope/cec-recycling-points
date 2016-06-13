@@ -1,0 +1,31 @@
+{
+  "id": "https://github.com/EdinburghCityScope/cec-recycling-points",
+  "title": "The City of Edinburgh Council recycling points",
+  "description": "Displays all recycling facilities across Edinburgh.",
+  "landingPage" : "https://github.com/EdinburghCityScope/cec-recycling-points",
+  "issued": "2016-04-03",
+  "modified": "2016-04-03",
+  "language": ["en"],
+  "publisher": {
+    "name": "Waste Services",
+    "mbox": "opendata@edinburgh.gov.uk"
+  },
+  "spatial": "http://www.geonames.org/maps/google_55.95_-3.193.html",
+  "keyword": ["bottles", "food","glass","paper","recyling","City of Edinburgh Council"],
+  "distribution": [
+    {
+      "title": "Recycling Points CSV file",
+      "description": "CSV representation of the recycling points",
+      "mediaType": "text/csv",
+      "downloadURL": "https://raw.githubusercontent.com/EdinburghCityScope/cec-recycling-points/master/data/recycle-points.csv",
+      "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+    },
+    {
+      "title": "Recyling points GeoJSON file",
+      "description": "GeoJSON representation of the recycling points",
+      "mediaType": "application/vnd.geo+json",
+      "downloadURL": "https://raw.githubusercontent.com/EdinburghCityScope/cec-recycling-points/master/data/recycle-points.geojson",
+      "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+    }
+  ]
+}
