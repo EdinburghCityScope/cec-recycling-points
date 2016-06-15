@@ -1,7 +1,7 @@
 {
-  "name": "uoe-campus-maps",
+  "name": "cec-recycling-points",
   "version": "1.0.0",
-  "description": "Edinburgh City Scope Loopback API on UoE Campus Maps",
+  "description": "Edinburgh City Scope Loopback API on City of Edinburgh Council recycling points",
   "main": "loopback/server/server.js",
   "scripts": {
     "start": "node .",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EdinburghCityScope/uoe-campus-maps.git"
+    "url": "git+https://github.com/EdinburghCityScope/cec-recyling-points.git"
   },
   "author": "Richard Omand-Good <richard.good@ed.ac.uk>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EdinburghCityScope/uoe-campus-maps/issues"
+    "url": "https://github.com/EdinburghCityScope/cec-recyling-points/issues"
   },
-  "homepage": "https://github.com/EdinburghCityScope/uoe-campus-maps#readme",
+  "homepage": "https://github.com/EdinburghCityScope/cec-recyling-points#readme",
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
