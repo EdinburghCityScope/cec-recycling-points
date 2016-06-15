@@ -1,4 +1,4 @@
-// Script which converts a FeatureCollection to an array of Features
+// ckan importer script
 var fs = require('fs');
 var edinburghcityscopeUtils = require('edinburghcityscope-utils');
 var getDataFromURL = edinburghcityscopeUtils.getDataFromURL;
