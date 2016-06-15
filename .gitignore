@@ -34,4 +34,4 @@ node_modules
 
 .idea
 
-notebooks/.ipynb_checkpoints/**
+/notebooks/.ipynb_checkpoints
