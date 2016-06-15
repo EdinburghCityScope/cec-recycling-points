@@ -25,7 +25,7 @@ cd cec-recycling-points
 npm install
 ```
 
-Run the API (from the uoe-campus-maps directory)
+Run the API (from the cec-recycling-points directory)
 
 ```
 node .
