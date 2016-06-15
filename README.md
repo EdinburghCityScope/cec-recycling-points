@@ -36,3 +36,9 @@ Converting the csv into loopback data.
 ```
 node scripts/featureCollectionToLoopbackJson.js
 ```
+
+Importing data from Edinburgh Council CKAN portal
+
+```
+node scripts/ckan-import.js
+```
