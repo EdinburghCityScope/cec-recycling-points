@@ -1,7 +1,11 @@
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var path = require('path');
+var datadir = path.join(__dirname, '..', '..', 'data');
 
 var app = module.exports = loopback();
+app.set("LOOPBACK_DATA_FILE", path.join(datadir, "recycle-points-loopback.json"));
+console.log("Using data file " + app.get("LOOPBACK_DATA_FILE"));
 
 app.start = function() {
   // start the web server
