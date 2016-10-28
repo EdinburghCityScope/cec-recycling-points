@@ -14,22 +14,23 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": null,
+    "public": false
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": null,
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": null,
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": null,
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": null,
     "public": false
   },
   "GeoJSONFeature": {
