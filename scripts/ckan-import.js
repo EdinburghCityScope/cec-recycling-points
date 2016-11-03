@@ -7,21 +7,17 @@ var convertCkanAPIResultsToCityScopeJson = edinburghcityscopeUtils.convertCkanAP
 var parseCkanApiResponseFields = edinburghcityscopeUtils.parseCkanApiResponseFields;
 var parseCkanApiResult = edinburghcityscopeUtils.parseCkanApiResult;
 var convertCsvDataToGeoJson = edinburghcityscopeUtils.convertCsvDataToGeoJson;
-var csv2geojson = require('csv2geojson');
 var json2csv = require('json2csv');
-var csvtojson = require('csvtojson');
 var path = require('path');
 var datadir = path.join(__dirname, '..', 'data');
 
-//var featureCollection = fs.readFileSync('../data/campus-maps.geojson', 'utf8');
-//var features = [];
-//features = edinburghcityscopeUtils.featureCollectionToFeatureArray(featureCollection);
-//var loopbackJson = edinburghcityscopeUtils.featureArrayToLoopbackJson(features);
 var ckanApiUrl = 'http://data.edinburghopendata.info/api/action/datastore_search?resource_id=4cfb5177-d3db-4efc-ac6f-351af75f9f92';
 var outputCsvFile = path.join(datadir, 'recycle-points.csv');
 var outputGeoJsonFile = path.join(datadir, 'recycle-points.geojson');
 console.log("Getting ckan data from API");
-getDataFromURL(ckanApiUrl, function(callback){
+getDataFromURL(ckanApiUrl, function(err, callback){
+  if (err) throw err
+
   console.log("Running data parse");
   var ckanJson = convertCkanAPIResultsToCityScopeJson(callback);
   ckanJson = parseCkanApiResult(ckanJson);
