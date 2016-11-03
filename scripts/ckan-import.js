@@ -30,7 +30,7 @@ getDataFromURL(ckanApiUrl, function(err, callback){
   ckanFields.forEach(function(obj){
     csvFields.push(obj.id);
   });
-  json2csv({ data: ckanJson, fields: csvFields }, function(err, csv) {
+  json2csv({ data: ckanJson, fields: csvFields, newLine: "\n" }, function(err, csv) {
     if (err) console.log(err);
     fs.writeFile(outputCsvFile, csv, function(err) {
       if (err) throw err;
